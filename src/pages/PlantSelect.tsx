@@ -5,6 +5,7 @@ import {
     Text, 
     View 
 } from 'react-native';
+import { useNavigation } from '@react-navigation/core';
 
 import { Header } from '../components/Header';
 
@@ -15,6 +16,7 @@ import { FlatList } from 'react-native-gesture-handler';
 import api from '../services/api';
 import { PlantCardPrimary } from '../components/PlantCardPrimary';
 import { Load } from '../components/Load';
+
 
 
 interface EnviromentProps {
@@ -44,7 +46,8 @@ export function PLantSelect() {
 
     const [page, setPage] = useState(1);
     const [loadingMore, setLoadingMore] = useState(false);
-    const [loadedAll, setLoadedAll] = useState(false)
+
+    const navigation = useNavigation();
     
 
     async function fetchPlants() {
@@ -88,6 +91,10 @@ export function PLantSelect() {
         setPage(oldValue => oldValue + 1);
         fetchPlants();
 
+    }
+
+    function handlePlantSelect(plant: PlantProps) {
+        navigation.navigate('PlantSave', {plant})
     }
 
     useEffect(() => {
@@ -154,6 +161,7 @@ export function PLantSelect() {
                     renderItem={({item}) => (
                         <PlantCardPrimary 
                             data={item}
+                            onPress={() => handlePlantSelect(item)}
                         />
                     )}
                     showsVerticalScrollIndicator={false}
