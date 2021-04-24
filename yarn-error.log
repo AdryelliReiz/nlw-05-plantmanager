@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add date-fns
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @react-navigation/bottom-tabs
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Adryelli\bin;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs;C:\Users\Adryelli\AppData\Local\Microsoft\WindowsApps;C:\Users\Adryelli\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Adryelli\AppData\Roaming\Dashlane\6.2018.0.34867\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\Adryelli\AppData\Roaming\Dashlane\6.2018.0.34867\ucrt;C:\Users\Adryelli\AppData\Roaming\Dashlane\6.2018.0.34867\bin\Qt;C:\Users\Adryelli\AppData\Roaming\Dashlane\6.2018.0.34867\bin\Ssl;C:\Users\Adryelli\AppData\Local\Yarn\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Adryelli\AppData\Roaming\npm
@@ -35,6 +35,7 @@ npm manifest:
       "@react-navigation/native": "^5.9.4",
       "@react-navigation/stack": "^5.14.4",
       "axios": "^0.21.1",
+      "date-fns": "^2.21.1",
       "expo": "~41.0.0",
       "expo-app-loading": "^1.0.3",
       "expo-font": "~9.1.0",
@@ -2859,6 +2860,11 @@ Lockfile:
     version "3.0.8"
     resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
     integrity sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
+  
+  date-fns@^2.21.1:
+    version "2.21.1"
+    resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.21.1.tgz#679a4ccaa584c0706ea70b3fa92262ac3009d2b0"
+    integrity sha512-m1WR0xGiC6j6jNFAyW4Nvh4WxAi4JF4w9jRJwSI8nBmNcyZXPcP9VUQG+6gHQXAmqaGEKDKhOqAtENDC941UkA==
   
   dayjs@^1.8.15:
     version "1.10.4"
